@@ -1,0 +1,27 @@
+.imageDiv {
+  display: inline-block;
+}
+
+.itemImage {
+  width: 600px;
+}
+
+.descriptionDiv {
+  display: inline-block;
+  width: 55%;
+  float: right;
+}
+
+.descriptionTitle {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.descriptionPrice {
+  font-size: 3rem;
+  margin: 1% auto 5% auto;
+}
+
+.description {
+  width: 80%;
+}

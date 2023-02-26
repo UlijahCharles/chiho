@@ -1,0 +1,61 @@
+html {
+  background-image: url("../assets/landing_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  text-align: center;
+  background-color: #d82137;
+  height: 6rem;
+}
+
+.navList {
+  list-style-type: none;
+  margin-top: 1%;
+  display: inline-block;
+}
+.navItem {
+  display: inline;
+  margin-right: 2rem;
+}
+
+.link {
+  color: ghostwhite;
+  text-decoration: none;
+}
+
+.logo {
+  position: absolute;
+  z-index: 1;
+  left: 5%;
+  height: 200px;
+  width: 200px;
+}
+
+.contact {
+  position: absolute;
+  right: 5%;
+}
+
+.relative {
+  position: relative;
+}
+
+@media only screen and (max-width: 620px) {
+  .logo {
+    position: static;
+    display: inline;
+    float: left;
+  }
+
+  .nav {
+    height: 8rem;
+  }
+  .navItem {
+    display: block;
+  }
+  .contact {
+    position: static;
+  }
+}

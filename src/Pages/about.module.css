@@ -1,0 +1,67 @@
+.aboutContainer {
+  margin: 3% 0 10% 0;
+}
+
+.aboutTitle {
+  float: left;
+  padding: 0 4%;
+  margin-top: 0;
+  font-size: 5rem;
+}
+
+.aboutImage {
+  float: left;
+  margin: 0 2% 2% 2%;
+  width: 25rem;
+}
+
+.aboutLogo {
+  margin-top: 13%;
+}
+
+.aboutText {
+  margin: 0;
+}
+
+.contactTitle {
+  font-size: 5rem;
+  clear: left;
+  padding: 0 4%;
+}
+
+.contactContainer {
+  margin: 1% 0 2% 4%;
+  height: 10%;
+}
+
+.title {
+  display: inline-block;
+  color: #d82137;
+  margin-right: 15%;
+  font-weight: bolder;
+}
+
+.contactText {
+  display: inline-block;
+  margin-right: 13%;
+}
+
+.contactText p {
+  margin: 0;
+}
+
+.contactNumber {
+  font-size: 2rem;
+  font-weight: 500;
+  display: inline;
+}
+
+.contactAddress {
+  font-size: 1rem;
+  display: inline;
+}
+
+.contactTime {
+  font-size: 1rem;
+  display: inline;
+}

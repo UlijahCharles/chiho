@@ -1,0 +1,74 @@
+/*.itemContainer {
+  display: inline-block;
+
+  margin: 1%;
+}
+.itemImg {
+  height: 268px;
+  object-fit: cover;
+}
+
+.itemTitle {
+  font-weight: 400;
+  color: black;
+  margin-top: 0;
+}
+
+.itemPrice {
+  font-weight: 700;
+  font-size: 17px;
+  color: black;
+  margin-left: 46%;
+}
+*/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-bottom: 60px;
+}
+.card > div {
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.cardImage {
+  width: 400px;
+  height: 250px;
+}
+.cardImage > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.cardText {
+  margin: -30px auto;
+  margin-bottom: -50px;
+  height: 300px;
+  width: 300px;
+  background-color: #1d1c20;
+  color: #fff;
+  padding: 20px;
+}
+.cardMealType {
+  font-style: italic;
+}
+.cardTitle {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.cardBody {
+  font-size: 1.25rem;
+}
+.cardPrice {
+  width: 100px;
+  height: 100px;
+  background-color: #970c0a;
+  color: #fff;
+  margin-left: auto;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

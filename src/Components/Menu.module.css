@@ -1,0 +1,15 @@
+/*.dishes {
+  text-align: center;
+  padding-left: 1%;
+}
+*/
+
+.layout {
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  padding: 0 2%;
+}

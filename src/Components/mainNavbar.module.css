@@ -1,0 +1,36 @@
+html {
+  all: unset;
+}
+
+.title {
+  display: inline-block;
+  color: #d82137;
+  margin: 0 2%;
+  font-weight: bolder;
+}
+
+.navbar {
+  display: inline-block;
+  list-style: none;
+  width: 80%;
+  text-align: center;
+}
+
+.navItem {
+  display: inline;
+  margin-right: 5%;
+  font-weight: bolder;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.cartIcon {
+  transform: translateY(10px);
+}
+
+.noEntry {
+  text-decoration: line-through;
+}

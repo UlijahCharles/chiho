@@ -1,0 +1,9 @@
+.leaflet-container {
+  width: 98%;
+  height: 400px;
+  margin-bottom: 8%;
+}
+
+span {
+  font-weight: bold;
+}
