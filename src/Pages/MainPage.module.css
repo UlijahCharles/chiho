@@ -1,21 +1,49 @@
-.header {
-  margin: 0 32%;
-  font-size: 8rem;
+.headerTitle {
+  margin: 0 28%;
+  font-size: 12rem;
   font-weight: 400;
   text-align: left;
   width: 50%;
 }
 
-.headerImg {
-  margin: 3% 32%;
+.headerVid {
+  border-radius: 4%;
+  margin: 0 auto;
+
+  width: 55%;
+  display: flex;
 }
 
 .menuTitle {
   font-size: 2rem;
   font-weight: 700;
-  margin-left: 2%;
 }
 
+/*
 hr {
   width: 95.8%;
+}
+*/
+
+@media screen and (max-width: 1529px) {
+  .headerTitle {
+    font-size: 10rem;
+  }
+}
+
+@media screen and (max-width: 2200px) {
+}
+@media screen and (max-width: 1200px) {
+  .headerTitle {
+    margin: 0;
+    font-size: 8rem;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .headerTitle {
+    font-size: 4rem;
+  }
 }

@@ -1,9 +1,16 @@
 .leaflet-container {
   width: 98%;
   height: 400px;
-  margin-bottom: 8%;
+  margin-top: 1%;
+  margin-bottom: 3%;
 }
 
 span {
   font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+  .leaflet-container {
+    margin-top: 6%;
+  }
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Button from "../UI/Button";
 import styles from "./Landing.module.css";
 import LaunchNavbar from "../Components/LaunchNavbar";
+import EnterButton from "../UI/EnterButton";
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ const Landing = () => {
           CHIHO <br /> IS TRUE CHINA
         </p>
 
-        <Button title="Enter" onEnter={Enter} />
+        <EnterButton title="Enter" onEnter={Enter} />
       </div>
     </React.Fragment>
   );

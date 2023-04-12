@@ -1,5 +1,4 @@
 import logo from "../assets/logo2.png";
-import background from "../assets/landing_background.png";
 import styles from "./launchNavbar.module.css";
 
 const LaunchNavbar = () => {

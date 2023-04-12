@@ -8,6 +8,7 @@ html {
   text-align: center;
   background-color: #d82137;
   height: 6rem;
+  font-family: "Montserrat";
 }
 
 .navList {
@@ -42,20 +43,32 @@ html {
   position: relative;
 }
 
+.link:hover {
+  color: black;
+}
+
 @media only screen and (max-width: 620px) {
-  .logo {
-    position: static;
-    display: inline;
-    float: left;
+  .nav {
+    height: 12.5rem;
   }
 
-  .nav {
-    height: 8rem;
-  }
-  .navItem {
-    display: block;
-  }
   .contact {
     position: static;
+  }
+
+  .navList {
+    margin: 0;
+    transform: translateY(-15px);
+  }
+
+  .navItem {
+    display: block;
+    margin: 0;
+  }
+
+  .logo {
+    position: static;
+    height: 100px;
+    width: 110px;
   }
 }

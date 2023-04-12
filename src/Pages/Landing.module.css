@@ -12,7 +12,26 @@
 .slogan {
   text-align: center;
   text-shadow: 2px 2px 8px #000000;
-  margin: 25% 0;
+  margin: 5% 0;
   color: white;
-  font-size: 6rem;
+  font-size: 10rem;
+  font-family: "Open Sans";
+}
+
+@media screen and (max-width: 620px) {
+  .slogan {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .slogan {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .slogan {
+    font-size: 5rem;
+  }
 }

@@ -9,7 +9,9 @@ const LaunchNavbar = () => {
   return (
     <React.Fragment>
       <nav>
-        <h1 className={styles.title}>CHIHO</h1>
+        <Link to={"/home"} className={styles.title}>
+          CHIHO
+        </Link>
         <ul className={styles.navbar}>
           <li className={styles.navItem}>
             <Link to={"/menu"} className={styles.link}>
@@ -17,12 +19,20 @@ const LaunchNavbar = () => {
             </Link>
           </li>
           <li className={`${styles.navItem} ${styles.noEntry}`}>
-            <Link to={"#"} className={styles.link}>
+            <Link
+              to={"#"}
+              className={styles.link}
+              onClick={(e) => e.preventDefault()}
+            >
               Stocks
             </Link>
           </li>
           <li className={`${styles.navItem} ${styles.noEntry}`}>
-            <Link to={"#"} className={styles.link}>
+            <Link
+              to={"#"}
+              className={styles.link}
+              onClick={(e) => e.preventDefault()}
+            >
               Delivery
             </Link>
           </li>
@@ -32,12 +42,16 @@ const LaunchNavbar = () => {
             </Link>
           </li>
           <li className={`${styles.navItem} ${styles.noEntry}`}>
-            <Link to={"#"} className={styles.link}>
+            <Link
+              to={"#"}
+              className={styles.link}
+              onClick={(e) => e.preventDefault()}
+            >
               How To Get
             </Link>
           </li>
         </ul>
-        <button href="#">
+        <button href="#" className={styles.cartButton}>
           <img src={cartIcon} className={styles.cartIcon} />
           <sup>({cartAmount})</sup>
         </button>

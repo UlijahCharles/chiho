@@ -1,16 +1,18 @@
 import React from "react";
 import MenuItem from "./MenuItem";
-import Button from "../UI/Button";
 import styles from "./Menu.module.css";
 import { useSearchParams } from "react-router-dom";
+import AddToCartButton from "../UI/AddTo";
 const Menu = (props) => {
   let [searchParams, setSearchParams] = useSearchParams();
-  const param = searchParams.get("menu");
+  let param = searchParams.get("menu");
+
   return (
     <React.Fragment>
       <section className={styles.layout}>
         {props.menuArray
           .filter((items) => {
+            if (props.param) param = props.param;
             return items.type === param;
           })
           .map((data) => {
@@ -20,13 +22,14 @@ const Menu = (props) => {
                 price={data.price}
                 type={data.type}
                 imageUrl={data.imageUrl}
+                description={data.description}
                 key={data.id}
+                id={data.id}
+                menuParam={param}
               />
             );
           })}
-        {props.showButton && (
-          <Button title="VIEW MENU" width="20%" height="80px" fontSize="28px" />
-        )}
+        {props.showButton && <AddToCartButton title="Add To Cart" />}
       </section>
     </React.Fragment>
   );

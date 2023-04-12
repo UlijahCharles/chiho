@@ -1,56 +1,38 @@
-import React, { useCallback, useEffect, useState } from "react";
-import MainNavbar from "../Components/MainNavbar";
+import React from "react";
 import Menu from "../Components/Menu";
 import chefImage from "../assets/test2.jpg";
 import style from "./MainPage.module.css";
-import MenuList from "../Components/MenuList";
+import MenuNav from "../Components/MenuNav";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import useFetch from "../hooks/use-Fetch";
+import videoPlay from "../assets/vibe.mp4";
 
 const MainPage = () => {
-  const [menuData, setMenuData] = useState([]);
+  let [searchParams, setSearchParams] = useSearchParams();
+  const navigate = useNavigate();
+  const param = searchParams.get("menu");
 
-  const fetchMenu = useCallback(async () => {
-    try {
-      //
-      const response = await fetch(
-        "https://eco-azimuth-375816-default-rtdb.firebaseio.com/menu.json"
-      );
-      if (!response.ok) {
-        throw new Error(response.status);
-      }
+  if (!param) {
+    navigate("?menu=Appetizers");
+  }
 
-      const data = await response.json();
-      const menu = [];
-      for (const type in data) {
-        for (const id in data[type]) {
-          menu.push({
-            type: type,
-            id: id,
-            imageUrl: data[type][id].imageUrl,
-            price: data[type][id].price,
-            title: data[type][id].title,
-          });
-        }
-      }
-      setMenuData(menu);
-    } catch (error) {
-      console.log(error);
-    }
-  }, []);
-
-  useEffect(() => {
-    fetchMenu();
-  }, [fetchMenu]);
+  const menuData = useFetch();
 
   return (
     <React.Fragment>
-      <h1 className={style.header}>
+      <h1 className={style.headerTitle}>
         CHIHO
         <br /> IS TRUE CHINA
       </h1>
-      <img src={chefImage} className={style.headerImg}></img>
-      <h2 className={style.menuTitle}>POPULAR DISHES</h2>
-      <MenuList />
-      <hr></hr>
+      {/*<img src={chefImage} className={style.headerImg} alt=""></img>*/}
+      <video className={style.headerVid} autoPlay muted loop playsInline>
+        <source src={videoPlay} type="video/mp4" />
+      </video>
+
+      <h2 className={style.menuTitle}>
+        <span>POPULAR DISHES</span>
+      </h2>
+      <MenuNav />
       <Menu menuArray={menuData} />
     </React.Fragment>
   );

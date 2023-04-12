@@ -1,18 +1,20 @@
 .aboutContainer {
-  margin: 3% 0 10% 0;
+  margin-bottom: 8%;
+}
+
+.aboutDescription {
+  padding: 0 5%;
 }
 
 .aboutTitle {
-  float: left;
-  padding: 0 4%;
   margin-top: 0;
   font-size: 5rem;
 }
 
 .aboutImage {
   float: left;
-  margin: 0 2% 2% 2%;
-  width: 25rem;
+  margin: 0 2% 0 2%;
+  width: 350px;
 }
 
 .aboutLogo {
@@ -21,12 +23,12 @@
 
 .aboutText {
   margin: 0;
+  font-size: 2rem;
 }
 
 .contactTitle {
+  margin-top: 0;
   font-size: 5rem;
-  clear: left;
-  padding: 0 4%;
 }
 
 .contactContainer {
@@ -34,24 +36,25 @@
   height: 10%;
 }
 
+.contactInfo {
+  text-align: center;
+  width: 100%;
+}
+
 .title {
   display: inline-block;
   color: #d82137;
-  margin-right: 15%;
+  margin-right: 4%;
   font-weight: bolder;
 }
 
 .contactText {
   display: inline-block;
-  margin-right: 13%;
-}
-
-.contactText p {
-  margin: 0;
+  margin-right: 5%;
 }
 
 .contactNumber {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 500;
   display: inline;
 }
@@ -64,4 +67,58 @@
 .contactTime {
   font-size: 1rem;
   display: inline;
+}
+
+.leaflet-container {
+  margin: 2% auto;
+}
+
+@media screen and (max-width: 900px) {
+  .contactTitle {
+    font-size: 3rem;
+    margin-bottom: 2%;
+  }
+
+  .aboutTitle {
+    font-size: 3.5rem;
+  }
+  .contactNumber {
+    font-size: 1rem;
+  }
+
+  .title {
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .contactText {
+    display: block;
+    margin-right: 1%;
+    text-align: center;
+  }
+
+  .aboutImage {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .contactText {
+    display: block;
+    margin-bottom: 1%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .aboutImage {
+    float: none;
+    margin: 0 auto 6% auto;
+    display: block;
+  }
+
+  .aboutImage {
+    width: 200px;
+  }
 }

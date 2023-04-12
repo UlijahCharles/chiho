@@ -1,13 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Montserrat", "Open Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+hr {
+  border: 1px solid red;
+  margin-bottom: 2%;
+}
+
+h2 {
+  text-align: center;
+  margin: 3rem 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  letter-spacing: 3px;
+  overflow: hidden;
+}
+
+h2 span {
+  float: left;
+  margin: 0 0.5%;
+}
+
+h2:after {
+  content: "";
+  display: block;
+  margin-top: 0.6em;
+  overflow: hidden;
+  background: red;
+  height: 4px;
+}
+
+h2:before {
+  content: "-----------";
+  display: block;
+  margin-top: 0.6em;
+  overflow: hidden;
+  background: red;
+  height: 4px;
+  float: left;
+}
+
+@media screen and (max-width: 705px) {
+  h2:before {
+    content: "-----";
+  }
 }
