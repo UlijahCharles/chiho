@@ -44,3 +44,9 @@
     margin-bottom: 4%;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .menuNav {
+    padding: 0 20%;
+  }
+}

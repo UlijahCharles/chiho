@@ -183,3 +183,9 @@ a {
   border: none;
   background-color: transparent;
 }
+
+@media screen and (max-width: 430px) {
+  .productCard {
+    width: 90%;
+  }
+}
